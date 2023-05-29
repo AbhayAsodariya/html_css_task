@@ -6,58 +6,63 @@
 .div-txt
 {
     height: 97vh;
-    width:60%;
-    background:linear-gradient(to right,#ff00008a,rgba(241, 159, 7, 0.4)), url(../../pexels-christian-heitz-842711.jpg);
+    width:50vw;
+    background:linear-gradient(to right,#ff00008a,rgba(241, 159, 7, 0.4)), url(../pexels-christian-heitz-842711.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     margin: auto;
     padding-top: 80px;
 }
 
-.color-bg
+.form-set
 {
     background:#e8b8b8;
-    width: 55%;
-    height: 80%;
+    width: 33vw;
+    height: 73vh;
     margin: auto;
     border-radius: 10px;
     box-shadow: 0 0 20px black;
     padding: 40px;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 
 .h1-set {
 
-    height: 40px;
+    height: 10vh;
+    width: 25vw;
+    margin: auto;
     text-align: center;
     background:linear-gradient(to right,#ff0000e7,rgb(241, 159, 7));
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     color: transparent;
     -webkit-background-clip: text;
 }
 
-.m{
+.label_input_margin{
     margin: 10px;
 }
 
 .btn{
     background: linear-gradient(to right,#ff00008a,rgba(241, 159, 7, 0.4));
-    margin-left: 85px;
+    /* margin-left: 85px; */
+    margin: auto;
     margin-top: 40px;
-    height: 40px;
-    width: 250px;
-    padding-left: 80px;
+    height: 6vh;
+    width: 17vw;
+    /* padding-left: 80px; */
+    text-align: center;
     padding-top: 6px;
     color: transparent; 
 }
 
-.b
+.input_border
 {
     border: none;
     border-bottom: 2px solid gray;
-    width: 400px;
+    width: 26vw;
     background: transparent;
 }
 
