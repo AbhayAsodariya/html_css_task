@@ -15,8 +15,11 @@ body{
     background-repeat: no-repeat;
     margin: auto;
     padding-top: 80px;
+    opacity: 0.8;
 }
-
+.div-txt:hover{
+    opacity: 1;
+}
 .form-set
 {
     background:#e8b8b8;
@@ -29,8 +32,12 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
+    opacity: 0.5;
 }
 
+.form-set:hover{
+    opacity: 1;
+}
 .h1-set {
 
     height: 70px;
@@ -68,8 +75,7 @@ label{
 .input_border
 {
     border: none;
-    border-bottom: 2px solid gray;
-    /* border-right-color: lightcoral; */
+    border-bottom: 3px solid gray;
     width: 23rem;
     background: transparent;
 }
@@ -98,5 +104,13 @@ a:hover{
 }
 
 .input_border:hover{
-    border-bottom: #ff0000e7 2px solid;
+    /* border-bottom:3px solid; */
+    border-image: linear-gradient(to right,#ff00008a,rgba(241, 159, 7, 0.4));
+    border-image-slice:40;
+}
+
+.input_border:focus{
+    /* border-bottom:3px solid; */
+    border-image: linear-gradient(to right,#ff00008a,rgba(241, 159, 7, 0.4));
+    border-image-slice:40;
 }
