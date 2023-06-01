@@ -69,9 +69,12 @@ label{
     /* padding-left: 80px; */
     text-align: center;
     padding-top: 6px;
-    color: transparent; 
+    color: transparent;
+    opacity: 0.5; 
 }
-
+.btn:hover{
+    opacity: 1;
+}
 .input_border
 {
     border: none;
@@ -111,6 +114,8 @@ a:hover{
 
 .input_border:focus{
     /* border-bottom:3px solid; */
+    outline: none;
     border-image: linear-gradient(to right,#ff00008a,rgba(241, 159, 7, 0.4));
     border-image-slice:40;
+    
 }
