@@ -37,7 +37,6 @@ body{
 
 .form-set:hover{
     opacity: 1;
-    /* backdrop-filter: blur(1px); */
 }
 .h1-set {
 
@@ -53,7 +52,6 @@ body{
 
 .label_input_margin{
     margin: 10px;
-    /* text-align: justify; */
 }
 
 label{
@@ -69,13 +67,11 @@ label{
 }
 
 .input_border:hover{
-    /* border-bottom:3px solid; */
     border-image: linear-gradient(to right,#ff00008a,rgba(241, 159, 7, 0.4));
     border-image-slice:40;
 }
 
 .input_border:focus{
-    /* border-bottom:3px solid; */
     outline: none;
     border-image: linear-gradient(to right,#ff00008a,rgba(241, 159, 7, 0.4));
     border-image-slice:40;
@@ -84,12 +80,10 @@ label{
 
 .btn{
     background: linear-gradient(to right,#ff00008a,rgba(241, 159, 7, 0.4));
-    /* margin-left: 85px; */
     margin: auto;
     margin-top: 40px;
     height: 43px;
     width: 15rem;
-    /* padding-left: 80px; */
     text-align: center;
     padding-top: 6px;
     color: transparent;
@@ -104,7 +98,6 @@ button{
     background: none;
     border: none;
     text-align: center;
-    /* text-align: justify; */
     font-size: 25px;
     color: #fff;
 }

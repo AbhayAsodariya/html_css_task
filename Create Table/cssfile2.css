@@ -63,16 +63,15 @@ a{
 
 .btn{
     background: white;
-    /* margin-left: 85px; */
     margin: auto;
-    margin-top: 40px;
+    margin-top: 20px;
     height: 43px;
     width: 15rem;
-    /* padding-left: 80px; */
     text-align: center;
-    padding-top: 6px;
+    padding-top: 8px;
     color: transparent;
     border-radius: 10px;
+    box-sizing: border-box;
     
 }
 
@@ -80,8 +79,7 @@ button{
     background: none;
     border: none;
     text-align: center;
-    /* text-align: justify; */
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .input_border{
@@ -96,4 +94,41 @@ button{
 ::placeholder{
     color: white;
     opacity: 0.9;
+}
+
+.fa{
+    margin-right: 2px;
+    color: white;
+}
+
+.btn-google{
+    background: rgba(255, 255, 255, 0.2);
+    margin-top: 20px;
+    height: 35px;
+    width: 10rem;
+    text-align: center;
+    padding-top: 6px;
+    color: transparent;
+    transform: translate(10px,0);
+}
+
+.google{
+    color: white;
+    opacity: 1;
+}
+
+.btn-facebook{
+    background: rgba(255, 255, 255, 0.2);
+    margin-top: 20px;
+    height: 35px;
+    width: 10rem;
+    text-align: center;
+    color: transparent;
+    padding-top: 6px;
+    transform: translate(180px,-61px);
+}
+
+.face{
+    color: white;
+    opacity: 1;
 }
