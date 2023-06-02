@@ -37,6 +37,7 @@ body{
 
 .form-set:hover{
     opacity: 1;
+    /* backdrop-filter: blur(1px); */
 }
 .h1-set {
 
@@ -59,6 +60,28 @@ label{
     color: royalblue;
 }
 
+.input_border
+{
+    border: none;
+    border-bottom: 3px solid gray;
+    width: 23rem;
+    background: transparent;
+}
+
+.input_border:hover{
+    /* border-bottom:3px solid; */
+    border-image: linear-gradient(to right,#ff00008a,rgba(241, 159, 7, 0.4));
+    border-image-slice:40;
+}
+
+.input_border:focus{
+    /* border-bottom:3px solid; */
+    outline: none;
+    border-image: linear-gradient(to right,#ff00008a,rgba(241, 159, 7, 0.4));
+    border-image-slice:40;
+    
+}
+
 .btn{
     background: linear-gradient(to right,#ff00008a,rgba(241, 159, 7, 0.4));
     /* margin-left: 85px; */
@@ -72,15 +95,9 @@ label{
     color: transparent;
     opacity: 0.5; 
 }
+
 .btn:hover{
     opacity: 1;
-}
-.input_border
-{
-    border: none;
-    border-bottom: 3px solid gray;
-    width: 23rem;
-    background: transparent;
 }
 
 button{
@@ -104,18 +121,4 @@ a:hover{
     background: #ff0000e7;
     color: transparent;
     -webkit-background-clip: text;
-}
-
-.input_border:hover{
-    /* border-bottom:3px solid; */
-    border-image: linear-gradient(to right,#ff00008a,rgba(241, 159, 7, 0.4));
-    border-image-slice:40;
-}
-
-.input_border:focus{
-    /* border-bottom:3px solid; */
-    outline: none;
-    border-image: linear-gradient(to right,#ff00008a,rgba(241, 159, 7, 0.4));
-    border-image-slice:40;
-    
 }

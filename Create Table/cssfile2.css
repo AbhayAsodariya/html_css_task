@@ -17,8 +17,9 @@ body{
     border-radius: 10px;
     box-shadow: 0 0 20px white;
     margin: auto;
-    transform: translate(0,-170px);
+    transform: translate(0,-200px);
     box-sizing: border-box;
+    backdrop-filter: blur(10px);
     
 }
 
@@ -26,7 +27,7 @@ body{
     height: 150px;
     width:150px;
     background: linear-gradient(#0000ff,rgba(173, 216, 230, 0.6));
-    transform: translate(140px,80px);
+    transform: translate(140px,50px);
     border-radius: 50%;
     box-sizing: border-box;
 }
@@ -35,7 +36,7 @@ body{
     height: 150px;
     width:150px;
     background: linear-gradient(to right,#ffa500,rgba(255, 255, 0, 0.6));
-    transform: translate(490px,335px);
+    transform: translate(490px,310px);
     border-radius: 50%;
     box-sizing: border-box;
 }
@@ -81,14 +82,17 @@ button{
     text-align: center;
     /* text-align: justify; */
     font-size: 25px;
-    color: #fff;
 }
+
 .input_border{
     background: none;
+    border: none;
     height: 42px;
     width: 17rem;
     background: rgba(255, 255, 255, 0.1);
+    color: #fff;
 }
+
 ::placeholder{
     color: white;
     opacity: 0.9;
