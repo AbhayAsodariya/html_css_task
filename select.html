@@ -1,0 +1,67 @@
+02-basic-tags.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+<form>
+    <!-- Name: <input type="text" required pattern="[a-zA-Z]+" title="Only letters...!"><br><br> -->
+
+    Name: <input type="text" required pattern="[a-zA-Z]{2,5}" title="min 2 and max 5     letters...!"><br><br>
+   
+    Color: <input type="color"><br><br>
+    
+    Email: <input type="email"><br><br>
+    
+    Password: <input type="password"><br><br>
+
+    <select>
+        <option hidden>--- Select your Country ---</option>
+        <option>India</option>
+        <!-- <option selected>Ahmedabad</option> -->
+        <option>USA </option>
+        <option disabled>UAE</option>
+
+    </select>
+
+ <br><br>   
+    Date: <input type="date"><br><br>
+    
+    Date-time: <input type="datetime-local"><br><br>
+    
+    Quantity: <input type="number"><br><br>
+ 
+    Upload Image: <input type="file"  multiple><br><br>
+ 
+   Range: <input type="range"><br><br>
+ 
+    Gender: 
+    <iNput type="radio" name="xyz">Male
+    <input tYpe="radio" name="xyz">Female
+ 
+    <br>
+    <br>
+    Languages: 
+    <input type="checkbox">Hindi
+    <input type="checkbox">English
+ 
+    <br>
+    <br>
+
+    <textarea rows="5" cols="30"></textarea>
+ 
+    <input type="submit" value="Signgup" >
+    <input type="reset">
+</form>
+
+
+
+    
+</body>
+</html>

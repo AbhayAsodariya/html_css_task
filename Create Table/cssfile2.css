@@ -26,8 +26,8 @@ body{
 .circle1{
     height: 150px;
     width:150px;
-    background: linear-gradient(#0000ff,rgba(173, 216, 230, 0.6));
-    transform: translate(140px,50px);
+    background: conic-gradient(from 180deg,#0000ff,rgba(173, 216, 230, 0.6));
+    transform: translate(150px,55px);
     border-radius: 50%;
     box-sizing: border-box;
 }
@@ -35,8 +35,8 @@ body{
 .circle2{
     height: 150px;
     width:150px;
-    background: linear-gradient(to right,#ffa500,rgba(255, 255, 0, 0.6));
-    transform: translate(490px,310px);
+    background: conic-gradient(#ffa500,rgba(255, 255, 0, 0.6));
+    transform: translate(500px,290px);
     border-radius: 50%;
     box-sizing: border-box;
 }
