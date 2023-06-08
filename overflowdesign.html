@@ -10,7 +10,12 @@
             box-sizing: border-box;
         }
         body{
-            background: radial-gradient(lightgreen, lightcoral);
+            height: 97vh;
+            background: conic-gradient(lightgreen, lightcoral);
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            /* transition: 10s; */
             
         }
         .a{
@@ -22,7 +27,9 @@
             border-radius: 50%;
             box-shadow: 0 15px 40px black,0 0 100px gold inset;
             padding: 280px 0 0 0 ;
+            transform: rotate(-1080deg);
             /* border: 20px rgb(237, 92, 92) ridge; */
+            transition: 5s;
         }
         .b{
             height: 600px;
@@ -44,6 +51,12 @@
             margin-top: -75rem;
             box-shadow: 0 0 100px gold inset, 0 15px 100px gold;
             /* border: 20px rgb(237, 92, 92) ridge; */
+        }
+        /* body:hover{
+            transform: rotate(360deg);
+        } */
+        body:hover .a{
+            transform: rotate(2160deg) scale(0);
         }
         </style>
 </head>
