@@ -5,210 +5,164 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        *{
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        .first-nav{
-            height: 50px;
-            background: black;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-        .nav1{
-            list-style-type: none;
-            /* height: 50px; */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-        }
-        .nav1 li{
-            width: 200px;
-            height: 50px;
-            /* border-left: 2px solid white; */
-            text-align: center;
-            line-height: 50px;
-            
-            /* display: flex; */
-            /* align-items: center; */
-            
-        }
-        .a1{
-            display: block;
-            text-decoration: none;
-            /* height: 100%;
-            width: 100%; */
-            /* background-color: white; */
-            color: rgb(255, 255, 255);
-            z-index:1;
-            position: relative;
-        }
-        .a1::before{
-            content: "";
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            display: none;
-            z-index: -1;
-            background: lightcoral;
-            transition: 1s;
-
-        }
-        .a1:hover::before{
-           display: block;
-        }
-        /* imageset */
-        .photo{
-        margin-top: 25px;
-        width: 100%;
-        height: 380px;
-        /* border: 2px solid black; */
-        display: flex;
-        justify-content: center;
-        /* position: relative; */
-       }
-
-       .b1{
-        height: 100%;
-        width: 16%;
-        box-shadow: 0 0 15px black;
-        margin-left: 40px;
-        position: relative;
-       }
-
-       .ad{
-        /* content: "ADD TO CART"; */
-        position: absolute;
-        width: 200px;
-        height: 40px;
-        color: white;
-        outline: 4px solid rgb(76, 170, 138);
-        font-weight: bold;
-        text-align: center;
-        line-height: 40px;
-        background: rgb(76, 170, 138);
-        bottom: 25px;
-        left: 25px;
-        transition: 0.4s;
-       }
-       .ad:hover{
-        /* outline: 4px solid rgb(76, 170, 138); */
-            outline-offset: 4px;
-       }
-       a{
-        text-decoration: none;
-       }
-       .n1{
-        height: 30px;
-        width: 230px;
-        font-size: 19px;
-        text-align: center;
-        font-weight: bold;
-        display: block;
-        color: red;
-        /* background: black; */
-        margin: auto;
-        /* text-decoration: none; */
-        transform: translate(0,270px);
-       }
-        img{
-            height: 100%; 
-            width: 100%;
-           transition: 1s;
-           position: absolute;
-
-
-        }
-        .i1:hover img
-        {
-            transform: rotatey(360deg);
-        }
-        .i1{
-            height: 60%;
-            width: 85%;
-            /* margin-left: 30px; */
-            /* box-shadow: 0 0 15px black; */
-            /* border: 2px solid black; */
-            position: relative;
-            transform: translate(20px, -10px);
-            /* opacity: 0; */
-            overflow: hidden;
-        }
-        .i1::before{
-            content: "QUICK VIEW";
-            color: white;
-            font-size: 15px;
-            height: 40px;
-            width: 100%;
-            background: black;
-            text-align: center;
-            line-height: 40px;
-            z-index: 1;
-            position: absolute;
-            bottom: 100%;
-            opacity: 0;
-            transition: 1s;
-        }
-        .i1:hover::before{
-            bottom: 0;
-            opacity: 1;
-        }
-       
-    </style>
+    <link rel="stylesheet" href="elitephoto.css">
 </head>
 <body>
     <div class="first-nav">
         
         <ul class="nav1">
-            <li class="list-item1"><a class="a1" href="#">MEN'S</a></li>
-            <li class="list-item1"><a class="a1" href="#">WOMEN'S</a></li>
-            <li class="list-item1"><a class="a1" href="#">BAGS</a></li>
-            <li class="list-item1"><a class="a1" href="#">FOOTWEAR</a></li>
+            <li class="list-item1 "><a class="a1" href="#">MEN'S</a>
+                <div class="photo">
+
+                    <div class="b1">
+                        <a href="#"><h4 class="ad">ADD TO CART</h4></a>
+                        <a class="n1" href="#"> Formal Blue Shirt </a>
+                        <div class="i1">
+                            <img src="../Images/m1.jpg" alt="" >
+                        </div>
+                    </div>
+            
+                    <div class="b1">
+                        <a href="#"><h4 class="ad">ADD TO CART</h4></a>
+                        <a class="n1" href="#"> Gabi Full Sleeve Sweatshirt </a>
+                        <div class="i1">
+                            <img src="../Images/m2.jpg" alt="" height="100%" width="20%">
+                        </div>
+                    </div>
+            
+                    <div class="b1">
+                        <a href="#"><h4 class="ad">ADD TO CART</h4></a>
+                        <a class="n1" href="#">Dark Blue Track Pant</a>
+                        <div class="i1">
+                            <img src="../Images/m3.jpg" alt="" height="100%" width="20%">
+                        </div>
+                    </div>
+            
+                    <div class="b1">
+                        <a href="#"><h4 class="ad">ADD TO CART</h4></a>
+                        <a class="n1" href="#">Round Neck Black T-shirt</a>
+                        <div class="i1">
+                            <img src="../Images/m4.jpg" alt="" height="100%" width="20%">
+                        </div>
+                    </div>
+            
+                </div>
+            </li>
+            <li class="list-item1"><a class="a1" href="#">WOMEN'S</a>
+                <div class="photo">
+
+                    <div class="b1">
+                        <a href="#"><h4 class="ad">ADD TO CART</h4></a>
+                        <a class="n1" href="#"> A-line Black Skirt </a>
+                        <div class="i1">
+                            <img src="../Images/w1.jpg" alt="" >
+                        </div>
+                    </div>
+            
+                    <div class="b1">
+                        <a href="#"><h4 class="ad">ADD TO CART</h4></a>
+                        <a class="n1" href="#"> Sleeveless Solid Blue Top </a>
+                        <div class="i1">
+                            <img src="../Images/w2.jpg" alt="" height="100%" width="20%">
+                        </div>
+                    </div>
+            
+                    <div class="b1">
+                        <a href="#"><h4 class="ad">ADD TO CART</h4></a>
+                        <a class="n1" href="#">Skinny Jeans</a>
+                        <div class="i1">
+                            <img src="../Images/w3.jpg" alt="" height="100%" width="20%">
+                        </div>
+                    </div>
+            
+                    <div class="b1">
+                        <a href="#"><h4 class="ad">ADD TO CART</h4></a>
+                        <a class="n1" href="#">Black Basic Shorts</a>
+                        <div class="i1">
+                            <img src="../Images/w4.jpg" alt="" height="100%" width="20%">
+                        </div>
+                    </div>
+            
+                </div>
+            </li>
+            <li class="list-item1"><a class="a1" href="#">BAGS</a>
+                <div class="photo">
+
+                    <div class="b1">
+                        <a href="#"><h4 class="ad">ADD TO CART</h4></a>
+                        <a class="n1" href="#"> Puma Backpack </a>
+                        <div class="i1">
+                            <img src="../Images/b1.jpg" alt="" >
+                        </div>
+                    </div>
+            
+                    <div class="b1">
+                        <a href="#"><h4 class="ad">ADD TO CART</h4></a>
+                        <a class="n1" href="#"> Laptop Backpack </a>
+                        <div class="i1">
+                            <img src="../Images/b2.jpg" alt="" height="100%" width="20%">
+                        </div>
+                    </div>
+            
+                    <div class="b1">
+                        <a href="#"><h4 class="ad">ADD TO CART</h4></a>
+                        <a class="n1" href="#">Hand-held Backpack </a>
+                        <div class="i1">
+                            <img src="../Images/b3.jpg" alt="" height="100%" width="20%">
+                        </div>
+                    </div>
+            
+                    <div class="b1">
+                        <a href="#"><h4 class="ad">ADD TO CART</h4></a>
+                        <a class="n1" href="#">Laptop Messanger Bag</a>
+                        <div class="i1">
+                            <img src="../Images/b4.jpg" alt="" height="100%" width="20%">
+                        </div>
+                    </div>
+            
+                </div>
+            </li>
+            <li class="list-item1"><a class="a1" href="#">FOOTWEAR</a>
+                <div class="photo">
+
+                    <div class="b1">
+                        <a href="#"><h4 class="ad">ADD TO CART</h4></a>
+                        <a class="n1" href="#"> Running Shoes </a>
+                        <div class="i1">
+                            <img src="../Images/s1.jpg" alt="" >
+                        </div>
+                    </div>
+            
+                    <div class="b1">
+                        <a href="#"><h4 class="ad">ADD TO CART</h4></a>
+                        <a class="n1" href="#"> Shoetopia Lace Up </a>
+                        <div class="i1">
+                            <img src="../Images/s2.jpg" alt="" height="100%" width="20%">
+                        </div>
+                    </div>
+            
+                    <div class="b1">
+                        <a href="#"><h4 class="ad">ADD TO CART</h4></a>
+                        <a class="n1" href="#">Steemo Casuals(black)</a>
+                        <div class="i1">
+                            <img src="../Images/s3.jpg" alt="" height="100%" width="20%">
+                        </div>
+                    </div>
+            
+                    <div class="b1">
+                        <a href="#"><h4 class="ad">ADD TO CART</h4></a>
+                        <a class="n1" href="#">Benetton Flip Flops</a>
+                        <div class="i1">
+                            <img src="../Images/s4.jpg" alt="" height="100%" width="20%">
+                        </div>
+                    </div>
+            
+                </div>
+            </li>
            
         </ul>
 
     </div>
-    <div class="photo">
-
-        <div class="b1">
-            <a href="#"><h4 class="ad">ADD TO CART</h4></a>
-            <a class="n1" href="#"> Formal Blue Shirt </a>
-            <div class="i1">
-                <img src="../Images/m1.jpg" alt="" >
-            </div>
-        </div>
-
-        <div class="b1">
-            <a href="#"><h4 class="ad">ADD TO CART</h4></a>
-            <a class="n1" href="#"> Gabi Full Sleeve Sweatshirt </a>
-            <div class="i1">
-                <img src="../Images/m2.jpg" alt="" height="100%" width="20%">
-            </div>
-        </div>
-
-        <div class="b1">
-            <a href="#"><h4 class="ad">ADD TO CART</h4></a>
-            <a class="n1" href="#">Dark Blue Track Pant</a>
-            <div class="i1">
-                <img src="../Images/m3.jpg" alt="" height="100%" width="20%">
-            </div>
-        </div>
-
-        <div class="b1">
-            <a href="#"><h4 class="ad">ADD TO CART</h4></a>
-            <a class="n1" href="#">Round Neck Black T-shirt</a>
-            <div class="i1">
-                <img src="../Images/m4.jpg" alt="" height="100%" width="20%">
-            </div>
-        </div>
-
-    </div>
+    
 </body>
 </html>

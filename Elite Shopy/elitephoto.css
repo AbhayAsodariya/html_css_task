@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.first-nav{
+    height: 50px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* overflow: hidden; */
+}
+.nav1{
+    list-style-type: none;
+    /* height: 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+
+}
+.nav1 li{
+    width: 200px;
+    height: 50px;
+    /* border-left: 2px solid white; */
+    text-align: center;
+    line-height: 50px;
+    
+    /* display: flex; */
+    /* align-items: center; */
+    
+}
+.a1{
+    display: block;
+    text-decoration: none;
+    /* height: 100%;
+    width: 100%; */
+    /* background-color: white; */
+    color: rgb(255, 255, 255);
+    z-index:1;
+    position: relative;
+}
+.a1::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: -1;
+    background: lightcoral;
+    transition: 1s;
+
+}
+.a1:hover::before{
+   display: block;
+}
+/* imageset */
+.photo{
+width: 96rem;
+height: 450px;
+/* border: 2px solid black; */
+/* transform: translate(-365px,0); */
+/* padding-left: 20%; */
+display: flex;
+transition: 1s;
+position: absolute;
+left: 0;
+display: none;
+/* opacity: 0; */
+/* justify-content: center; */
+/* position: relative; */
+}
+.list-item1{
+    /* position: relative; */
+}
+.list-item1:hover .photo{
+    
+    display: flex;
+    /* opacity: 1; */
+}
+.b1{
+height: 85%;
+width: 16%;
+box-shadow: 0 0 15px black;
+/* margin-left: 80px; */
+margin: 65px 0 0 110px;
+position: relative;
+/* opacity: 0;
+transition: 10s; */
+}
+/* .list-item1:hover .b1{
+    opacity: 1;
+} */
+.ad{
+/* content: "ADD TO CART"; */
+position: absolute;
+width: 200px;
+height: 40px;
+color: white;
+outline: 4px solid rgb(76, 170, 138);
+font-weight: bold;
+text-align: center;
+line-height: 40px;
+background: rgb(76, 170, 138);
+bottom: 25px;
+left: 15px;
+transition: 0.4s;
+}
+.ad:hover{
+/* outline: 4px solid rgb(76, 170, 138); */
+    outline-offset: 4px;
+}
+a{
+text-decoration: none;
+}
+.n1{
+height: 30px;
+width: 230px;
+font-size: 19px;
+text-align: center;
+font-weight: bold;
+display: block;
+color: red;
+/* background: black; */
+margin: auto;
+/* text-decoration: none; */
+transform: translate(0,250px);
+}
+img{
+    height: 100%; 
+    width: 100%;
+   transition: 1s;
+   position: absolute;
+   right: 0%;
+
+
+}
+.i1:hover img
+{
+    /* transform: rotatey(360deg); */
+}
+.i1{
+    height: 60%;
+    width: 85%;
+    /* margin-left: 30px; */
+    /* box-shadow: 0 0 15px black; */
+    /* border: 2px solid black; */
+    position: relative;
+    transform: translate(20px, -10px);
+    /* opacity: 0; */
+    overflow: hidden;
+}
+.i1::before{
+    content: "QUICK VIEW";
+    color: white;
+    font-size: 15px;
+    height: 40px;
+    width: 100%;
+    background: black;
+    text-align: center;
+    line-height: 40px;
+    z-index: 1;
+    position: absolute;
+    bottom: 100%;
+    right: 0%;
+    opacity: 0;
+    transition: 1s;
+}
+.i1:hover::before{
+    bottom: 0;
+    opacity: 1;
+}
