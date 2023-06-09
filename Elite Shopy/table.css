@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+.womenslid{
+    box-shadow: 0 0 10px black;
+    width: 700px;
+    height: 280px;
+    padding: 30px 0 0 30px;
+}
+.tbl2{
+    width: 650px;
+
+
+}
+.img1{
+    /* transform: translate(70px,0px); */
+}
+.ig{
+    width: 40%;
+}
+.ig img{
+    width: 100%;
+}

@@ -14,15 +14,12 @@
 }
 
 a{
-    /* display: block; */
-    padding: 25px 25px;
-    background: #000;
-       
-    /* position: relative; */
+    display: block;
+    /* background: #000; */
     font-size: 17px;
     text-decoration: none;
     color: white;
-}
+} 
 
 /* Start First-nav(sign in, sign up, etc..) */
 
@@ -48,131 +45,272 @@ a{
 
 /* End First nav */
 
-/* Start Second-nav(Home,About,etc.) */
 
+/* start second nav */
 .second-nav{
-    /* transform: translate(0,100px);   */
-    height: 70px;
-    background: #000;
-    /* overflow: hidden; */
-    border: 2px black solid;
+    height: 80px;
+    background: black;
     display: flex;
-    justify-content: center;
     align-items: center;
-
-}
-
-.sc{
-    height: 70px;
+    justify-content: center;
     position: relative;
-}
-.srt{
-    transform: translate(0px, 25px);
-}
-
-.itms{
-    list-style-type: none;
-    /* height: 100px; */
-    width: 100%;
-    text-align: center;
-    /* background: green; */
-    position: absolute;
-    top: 100%;
-    display: none;
-}
-.sc:hover .itms{
-    display: block;
-}
-.itm1{
-    border-bottom: 2px solid gray;
-    display: block;
-    background: transparent;
-    box-shadow: 0 0 1px black;
-    color: black;
-    font-weight: bold;
-    font-size: 15px;
-    padding: 0;
-    width: 100%;
-    height: 50px;
-    line-height: 50px;
-    transition: 0.2s;
-}
-.itm1:hover{
-    color: white;
-    background: aquamarine;
 }
 .nav2{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    /* overflow: hidden; */
-    /* width: 100%; */
-    background-color: #000;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70px;
-}
-
-li .a2::after{
-    /* display: block; */
-    height: 4px;
-    content: "";
-    width: 0%;
     position: absolute;
-    /* display: flex; */
-    left: 0%;
-    bottom: 0%;
-    background: aquamarine;
-    opacity: 0;
-    transition: .60s;
+    left: 180px;
+    align-items: center;
+    justify-content: center;
 }
+.nav2 .list-item2{
 
-li .a2:hover::after{
-    width: 100%;
-    opacity: 1;
+    height: 80px;
+    width: 130px;
+    text-align: center;
+    /* line-height: 80px; */
+
 }
-
 .a2{
+    line-height: 80px;
     position: relative;
 }
-
-
-.ct{
-    /* background: aquamarine; */
-    width: 200px;
+.a2::after{
+    content: "";
+    width: 0%;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
     background: aquamarine;
-    height: 72px;
-    border: none;
-    transform: translate(120px,0px);
-    /* text-align: center; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    transition: 1s;
+}
+.a2:hover::after{
+    width: 100%;
 }
 
-.crt{
+
+/* MEN'S Slide Start */
+
+.menslid{
+    height: 280px;
+    width: 700px;
+    box-shadow: 0 0 15px black;
+    padding: 35px 0 0 35px;
+    display: none;
+    /* background: red; */
+}
+.list-item2:hover .menslid{
+    display: block;
+}
+.tbl1
+{
+    width: 100%;
+    /* margin-top: 0px; */
+}
+.itm1{
+    text-align: left;
+    width: 150px;
+}
+.imag{
+    width: 200px;
+}
+.img0
+{   
+    width: 250px;
+    position: relative;
+    overflow: hidden;
+
+}
+.img0 img{
+    width: 250px;
+}
+
+.img0::after
+{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+    transition: 1s;
+}
+
+
+.img0:hover::after
+{
+    bottom: 0;
+    left: 0;
+}
+
+.img0::before
+{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    transition: 1s;
+}
+
+.img0:hover::before
+{
+    top: 0;
+    right: 0;
+}
+
+.sld{
     background: transparent;
-    background: rgba(0, 0, 0, 0.3);
-    font-size: 25px;
-    /* text-align: center; */
-    height:50px;
-    width: 20px;
+    display: block;
+    /* background: lightcoral; */
+    color: black;
+    font-size: 17px;
+    transition: 1s;
+   
+}
+
+/* MEN's slide End */
+
+
+/* Women slide start */
+.womenslid{
+    box-shadow: 0 0 10px black;
+    width: 700px;
+    height: 280px;
+    padding: 30px 0 0 35px;
+
+    display: none;
+}
+.list-item2:hover .womenslid{
+    display: block;
+}
+.tbl2{
+    width: 650px;
+
+
+}
+.img1{
+    overflow: hidden;
+    transform: translate(-40px,0);
+}
+.ig{
+    width: 40%;
+}
+.ig img{
+    width: 100%;
+}
+.itm1:hover .sld{
+    color: aquamarine;
+}
+
+.img1::after
+{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+    transition: 1s;
+}
+
+.itm1{
+    text-align: left;
+    width: 150px;
+}
+.img1:hover::after
+{
+    bottom: 0;
+    left: 0;
+}
+
+.img1::before
+{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    transition: 1s;
+}
+
+.img1:hover::before
+{
+    top: 0;
+    right: 0;
+}
+
+/* Women slide End */
+
+
+/* shortcode start */
+.itms{
+    box-shadow: 0 0 15px black;
+    display: none;
+    /* color: black; */
+}
+
+.itm{
+    height: 50px;
+    width: 100%;
+    list-style-type: none;
+    border-bottom: 3px solid gray;
+    line-height: 50px;
+}
+.list-item2:hover .itms{
+    display: block;
+}
+.itm0{
+    color: black;
+    font-size: 15px;
+    transition: 0.3s;
+}
+.itm0:hover{
+    background: aquamarine;
+    color: white;
+}
+
+/* shortcode end */
+
+/* start button */
+.ct{
+    height: 80px;
+    width: 180px;
+    background: aquamarine;
+    position: absolute;
+    left: 70%;
+    border: none;
     display: flex;
     justify-content: center;
-    /* transform: translate(0,-5px); */
+    align-items: center;
 }
-
-.cart{
+.crt{
+    height: 50px;
     width: 50px;
-    height: 40px;
-    /* background: rgba(255, 255, 255,1); */
-    color: black;
-    transform: translate(2px, -12px);
-    /* text-align: center; */
-}
+    background: rgba(0,0,0,0.3);
+    line-height: 50px;
+    font-size: 25px;
+    /* color: black; */
 
-/* End Second-nav */
+}
+.fa-cart-arrow-down{
+    color: #000;
+}
+/* End button */
+
+/* end second nav */
+
 
 /* Start third (search etc...) */
 
