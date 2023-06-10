@@ -1,19 +1,22 @@
+/* Start
+ (*)Universal element,All <a> tag apply and All font awesome icon 
+ */
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;;
 }
 
-/* body{
-    height: 100vh;
-} */
-
-.fa{
+.fa
+{
     color: aquamarine;
     margin-right: 10px;
 }
 
-a{
+a
+{
     display: block;
     /* background: #000; */
     font-size: 17px;
@@ -21,9 +24,16 @@ a{
     color: white;
 } 
 
+/* END
+(*)Universal element,All <a> tag apply and All font awesome icon
+ */
+
+
+ 
 /* Start First-nav(sign in, sign up, etc..) */
 
-.nav1{
+.nav1
+{
     list-style-type: none;
     height: 30px;
     margin: 0;
@@ -35,7 +45,8 @@ a{
     align-items: center;
 }
 
-.a1{
+.a1
+{
     display: block;
     text-align: center;
     width: 250px;
@@ -46,8 +57,13 @@ a{
 /* End First nav */
 
 
+
 /* start second nav */
-.second-nav{
+
+/* Start Navigationbar(HOME etc..) */
+
+.second-nav
+{
     height: 80px;
     background: black;
     display: flex;
@@ -55,7 +71,9 @@ a{
     justify-content: center;
     position: relative;
 }
-.nav2{
+
+.nav2
+{
     list-style-type: none;
     display: flex;
     position: absolute;
@@ -63,7 +81,9 @@ a{
     align-items: center;
     justify-content: center;
 }
-.nav2 .list-item2{
+
+.nav2 .list-item2
+{
 
     height: 80px;
     width: 130px;
@@ -71,11 +91,15 @@ a{
     /* line-height: 80px; */
 
 }
-.a2{
+
+.a2
+{
     line-height: 80px;
     position: relative;
 }
-.a2::after{
+
+.a2::after
+{
     content: "";
     width: 0%;
     height: 5px;
@@ -85,14 +109,19 @@ a{
     background: aquamarine;
     transition: 1s;
 }
-.a2:hover::after{
+
+.a2:hover::after
+{
     width: 100%;
 }
+
+ /* End Navigationbar */
 
 
 /* MEN'S Slide Start */
 
-.menslid{
+.menslid
+{
     height: 280px;
     width: 700px;
     box-shadow: 0 0 15px black;
@@ -100,21 +129,29 @@ a{
     display: none;
     /* background: red; */
 }
-.list-item2:hover .menslid{
+
+.list-item2:hover .menslid
+{
     display: block;
 }
+
 .tbl1
 {
     width: 100%;
     /* margin-top: 0px; */
 }
-.itm1{
+
+.itm1
+{
     text-align: left;
     width: 150px;
 }
-.imag{
+
+.imag
+{
     width: 200px;
 }
+
 .img0
 {   
     width: 250px;
@@ -122,6 +159,7 @@ a{
     overflow: hidden;
 
 }
+
 .img0 img{
     width: 250px;
 }
@@ -165,7 +203,11 @@ a{
     right: 0;
 }
 
-.sld{
+/* MEN's slide End */
+
+
+.sld
+{
     background: transparent;
     display: block;
     /* background: lightcoral; */
@@ -175,11 +217,16 @@ a{
    
 }
 
-/* MEN's slide End */
+.sld:hover
+{
+    color: aquamarine;
+}
 
 
 /* Women slide start */
-.womenslid{
+
+.womenslid
+{
     box-shadow: 0 0 10px black;
     width: 700px;
     height: 280px;
@@ -187,26 +234,33 @@ a{
 
     display: none;
 }
-.list-item2:hover .womenslid{
+
+.list-item2:hover .womenslid
+{
     display: block;
 }
-.tbl2{
+
+.tbl2
+{
     width: 650px;
 
 
 }
-.img1{
+
+.img1
+{
     overflow: hidden;
     transform: translate(-40px,0);
 }
-.ig{
+
+.ig
+{
     width: 40%;
 }
-.ig img{
+
+.ig img
+{
     width: 100%;
-}
-.itm1:hover .sld{
-    color: aquamarine;
 }
 
 .img1::after
@@ -222,10 +276,12 @@ a{
     transition: 1s;
 }
 
-.itm1{
+.itm1
+{
     text-align: left;
     width: 150px;
 }
+
 .img1:hover::after
 {
     bottom: 0;
@@ -255,36 +311,48 @@ a{
 
 
 /* shortcode start */
-.itms{
+
+.itms
+{
     box-shadow: 0 0 15px black;
     display: none;
     /* color: black; */
 }
 
-.itm{
+.itm
+{
     height: 50px;
     width: 100%;
     list-style-type: none;
     border-bottom: 3px solid gray;
     line-height: 50px;
 }
-.list-item2:hover .itms{
+
+.list-item2:hover .itms
+{
     display: block;
 }
-.itm0{
+
+.itm0
+{
     color: black;
     font-size: 15px;
     transition: 0.3s;
 }
-.itm0:hover{
+
+.itm0:hover
+{
     background: aquamarine;
     color: white;
 }
 
 /* shortcode end */
 
+
 /* start button */
-.ct{
+
+.ct
+{
     height: 80px;
     width: 180px;
     background: aquamarine;
@@ -295,7 +363,9 @@ a{
     justify-content: center;
     align-items: center;
 }
-.crt{
+
+.crt
+{
     height: 50px;
     width: 50px;
     background: rgba(0,0,0,0.3);
@@ -304,26 +374,34 @@ a{
     /* color: black; */
 
 }
-.fa-cart-arrow-down{
+
+.fa-cart-arrow-down
+{
     color: #000;
 }
+
 /* End button */
 
 /* end second nav */
 
 
+
 /* Start third (search etc...) */
 
-.third{
+/* Search Button Start */
+
+.third
+{
     
     /* width: 500px; */
     height: 130px;
-    /* border: 2px solid red; */
+    border: 2px solid red;
     display: flex;
     align-items: center;
 }
 
-.in{
+.in
+{
     width: 400px;
     height: 50px;
     border-color: gray solid;
@@ -331,12 +409,14 @@ a{
     padding-left: 10px;
 }
 
-::placeholder{
+::placeholder
+{
     font-size: 17px;
     
 }
 
-.search{
+.search
+{
     margin: 2px;
     width: 50px;
     height: 50px;
@@ -348,14 +428,19 @@ a{
     
 }
 
-.srh{
+.srh
+{
     background: transparent;
     /* text-align: center; */
     font-size: 25px;
     margin-left: 10px;
 }
 
-.srch{
+.srch
+{
     color: white;
 }
 
+/* Search Button End */
+
+/* Third END */
