@@ -96,6 +96,7 @@ a
 {
     line-height: 80px;
     position: relative;
+    overflow: hidden;
 }
 
 .a2::after
@@ -104,15 +105,42 @@ a
     width: 0%;
     height: 5px;
     position: absolute;
+    /* right: 100%; */
     left: 0;
     bottom: 0;
     background: aquamarine;
-    transition: 1s;
+    /* transition: 1s; */
 }
 
 .a2:hover::after
 {
     width: 100%;
+    transition: 1s;
+}
+
+.a2::before
+{
+    content: "";
+    width: 0%;
+    height: 5px;
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    
+    visibility: visible;
+    background: red;
+    background: aquamarine;
+    transition: 1s;
+}
+
+.a2:hover::before
+{
+    width: 100%;
+    visibility: hidden;
+    transition: 0s;
+
 }
 
  /* End Navigationbar */
@@ -170,6 +198,7 @@ a
     width: 100%;
     height: 100%;
     border-radius: 5px;
+    /* background: red; */
     background: rgba(0, 0, 0, 0.2);
     position: absolute;
     bottom: 100%;
@@ -191,6 +220,7 @@ a
     height: 100%;
     border-radius: 5px;
     background: rgba(0, 0, 0, 0.2);
+    /* background: blue; */
     position: absolute;
     top: 100%;
     right: 100%;
