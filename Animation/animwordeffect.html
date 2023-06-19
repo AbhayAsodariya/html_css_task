@@ -25,17 +25,93 @@
             background: white;
             margin: auto;
             position: absolute;
-            animation: word 2s infinite forwards;
+            animation: word 10s infinite forwards;
         }
         @keyframes word {
-            from{
+            0%{
                 bottom: 45%;
                 left: 36%;
             }
-            to{
-                left: 64%;
-                border-left: 2px solid black;
+            7%{
+                bottom: 45%;
+                left: 39.5%;
+            }
+            14%{
+                bottom: 45%;
+                left: 42%;
+            }
+            21%{
+                bottom: 45%;
+                left: 43%;
+            }
+            28%{
+                bottom: 45%;
+                left: 44%;
+                /* border-left: 2px solid black; */
+            } 
+            35%{
+                bottom: 45%;
+                left: 46.5%;
+                /* border-left: 2px solid black; */
+            } 
+            42%{
+                bottom: 45%;
+                left: 52%;
+                /* border-left: 2px solid black; */
+            } 
+            56%{
+                bottom: 45%;
+                left: 54.5%;
+                /* border-left: 2px solid black; */
+            } 
+            63%{
+                bottom: 45%;
+                left: 56%;
+                /* border-left: 2px solid black; */
             }   
+            70%{
+                bottom: 45%;
+                left: 57.5%;
+                /* border-left: 2px solid black; */
+            } 
+            77%{
+                bottom: 45%;
+                left: 60%;
+                /* border-left: 2px solid black; */
+            } 
+            84%{
+                bottom: 45%;
+                left: 61.5%;
+                /* border-left: 2px solid black; */
+            } 
+            91%{
+                bottom: 45%;
+                left: 62.5%;
+                /* border-left: 2px solid black; */
+            } 
+            100%{
+                bottom: 45%;
+                left: 64%;
+            }
+        } 
+ 
+        .b::after{
+            content: "";
+            height: 100%;
+            width: 4px;
+            background: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: wordcur 0.8s linear infinite;
+        }
+        @keyframes wordcur {
+            0%{
+               opacity: 0; 
+            }
+            100%{
+                opacity: 1;
+            }  
         }
     </style>
 </head>
