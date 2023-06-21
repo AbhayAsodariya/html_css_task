@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
+        .main{
             height: 100vh;
             display: flex;
             justify-content: center;
@@ -26,6 +26,8 @@
             margin: auto;
             position: absolute;
             animation: word 10s infinite forwards;
+
+            /* animation: name duration timing-function delay iteration-count direction steps(); */
         }
         @keyframes word {
             0%{
@@ -47,47 +49,38 @@
             28%{
                 bottom: 45%;
                 left: 44%;
-                /* border-left: 2px solid black; */
             } 
             35%{
                 bottom: 45%;
                 left: 46.5%;
-                /* border-left: 2px solid black; */
             } 
             42%{
                 bottom: 45%;
                 left: 52%;
-                /* border-left: 2px solid black; */
             } 
             56%{
                 bottom: 45%;
                 left: 54.5%;
-                /* border-left: 2px solid black; */
             } 
             63%{
                 bottom: 45%;
                 left: 56%;
-                /* border-left: 2px solid black; */
             }   
             70%{
                 bottom: 45%;
                 left: 57.5%;
-                /* border-left: 2px solid black; */
             } 
             77%{
                 bottom: 45%;
                 left: 60%;
-                /* border-left: 2px solid black; */
             } 
             84%{
                 bottom: 45%;
                 left: 61.5%;
-                /* border-left: 2px solid black; */
             } 
             91%{
                 bottom: 45%;
                 left: 62.5%;
-                /* border-left: 2px solid black; */
             } 
             100%{
                 bottom: 45%;
@@ -116,10 +109,12 @@
     </style>
 </head>
 <body>
-    <h1>
-    Hello World...
-    </h1>
-    <div class="b">
+    <div class="main">
+        <h1>
+        Hello World...
+        </h1>
+        <div class="b">
+        </div>
     </div>
 </body>
 </html>
