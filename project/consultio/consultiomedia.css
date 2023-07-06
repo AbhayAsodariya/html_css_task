@@ -148,4 +148,143 @@
         width: 100%;
         position: static;
     }
+    .abut{
+        margin: 0;
+    }
+    .section{
+        padding: 0 20px;
+    }
+    .services{
+        /* padding-left: 20px; */
+        background: none;
+        display: block;
+    }
+    .service-left{
+        width: 100%;
+        padding: 0;
+    }
+    .service-left .discription{
+        font-size: 33px;
+    }
+    .service-left .cnt p{
+        width: 100%;
+    }
+    .service-right{
+        width: 100%;
+    }
+    .service-right-bottom,.service-right-top{
+        /* border: 2px solid; */
+        display: block;
+        width: 100%;
+        margin: 20px 0;
+        /* margin-left: 0; */
+    }
+    .service-right .i1{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .read-more{
+        left: 31%;
+    }
+    .member{
+        display: block;
+    }
+    .member-bg{
+        display: block;
+        width: 100%;
+    }
+    .member-no{
+        display: block;
+    }
+    .member-no .line-set{
+        margin-top: 20px;
+    }
+    .phone{
+        width: 100%;
+    }
+    .testimonials{
+        display: block;
+    }
+    .testimonials-img img{
+        width: 100%;
+        object-fit: contain;
+    }
+    .testimonials-left{
+        padding: 0;
+        width: 100%;
+    }
+    .testimonials-cnt-p1{
+        width: 100%;
+    }
+
+    .project .project-right{
+        padding: 100px 0 0 100px;
+    }
+    .project{
+        background-size: 70% 100%;
+        display: block;
+    }
+    .circle{
+        display: none;
+    }
+   
+    .project-right-bg{
+        padding: 0 20px 20px 10px;
+        display: inline-block;
+    }
+    .project-img{
+        width: 285px;
+        margin-left: 10px;
+    }
+    .project-img1{
+        display: none;
+    }
+    .project-img-in{
+        height: 370px;
+        width: 300px;
+    }
+    .img-cnt{
+        left: 10%;
+    }
+    .project-img:hover .img-cnt{
+        top: 60%;
+    }
+    .img-cnt h3{
+        width: 170px;
+    }
+    .project-tab{
+        width: 100%;
+    }
+
+    .project-video{
+        display: block;
+        background: none;
+    }
+    .project-video-right{
+        display: none;
+    }
+    .project-video-left{
+        width: 100%;
+    }
+    .video-btn-list{
+        margin-left: 0;
+    }
+    .main-video a{
+        display: block;
+        width: 100%;
+        border-radius: 100px;
+    }
+    .our-mission-cnt{
+        position: static;
+        width: 100%;
+    }
+    .our-mission1{
+        display: none;
+    }
+    .percentage{
+        display: block;
+    }
+    .main-value{
+        margin-top: 50px;
+    }
 }    
