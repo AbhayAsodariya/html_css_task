@@ -278,13 +278,86 @@
         position: static;
         width: 100%;
     }
-    .our-mission1{
-        display: none;
-    }
     .percentage{
         display: block;
     }
     .main-value{
+        margin-top: 50px;
+    }
+    .img-line{
+        top: 200px;
+        /* padding: 0; */
+    }
+    .img-line-bg{
+        margin-top: 20px;
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .team-leader-cnt .tl-heading{
+        width: 100%;
+        font-size: 30px;
+    }
+    .input-detail{
+        display: block;
+        margin-top: 100rem;
+    }
+    .input-cnt-in{
+        margin: 0;
+    }
+    .input-cnt,.input-img{
+        width: 100%;
+    }
+    .input-tab input{
+        width: 100%;
+    }
+    .email{
+        margin: 0;
+    }
+    .input-tab textarea{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .pricing-box{
+        margin-top: 70px;
+    }
+    .blog{
+        margin-top: 135rem;
+    }
+
+    .blog-contant{
+        display: block;
+    }
+    .blog-heading,.blog-perg,.blog-per{
+        padding: 0;
+        width: 100%;
+    }
+    .blog-img{
+        display: block;
+    }
+    .blog-bg{
+        height: 300px;
+        margin-top: 50px;
+    }
+    .contact-about{
+        width: 100%;
+    }
+    .contact-about h1{
+        font-size: 30px;
+    }
+    .cnt-footer{
+        display: block;
+        padding: 0;
+    }
+    .footer-data{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .input-email .inpt{
+        width: 70%;
+        /* background: gray; */
+    }
+    .lst-footer{
         margin-top: 50px;
     }
 }    
