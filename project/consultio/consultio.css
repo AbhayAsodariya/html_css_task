@@ -6,15 +6,16 @@
     text-decoration: none;
     font-family: poppins,sans-serif;
 }
-
+body{
+    overflow-x: hidden;
+}
 .process div{
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
     border: 4px solid transparent;
     border-top: 4px solid gold;
     border-bottom: 4px solid gold;
-    border-top: 4px transparent solid;
     animation: rotatebar 1s linear infinite;
 }
 @keyframes rotatebar {
@@ -33,28 +34,34 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1;
+    /* z-index: -1; */
     position: fixed;
     animation: process 5s linear 1 forwards;
 }
 @keyframes process {
     0%{
-        visibility: visible;
+        opacity: 1;
+        z-index: 2;
     }
     20%{
-        visibility: visible;
+        opacity: 1;
+        z-index: 2;
     }
     40%{
-        visibility: visible;
+        opacity: 1;
+        z-index: 2;
     }
     60%{
-        visibility: visible;
+        opacity: 1;
+        z-index: 2;
     }
     80%{
-        visibility: visible;
+        opacity: 1;
+        z-index: 2;
     }
     100%{
-        visibility: hidden;
+        opacity: 0;
+        z-index: -1;
     }
 }
 
