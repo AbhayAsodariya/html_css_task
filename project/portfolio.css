@@ -246,6 +246,28 @@
 }
 
 .per2::after{
+    content: "85%";
+    font-size: 13px;
+    padding: 2px;
+    border-radius: 5px;
+    color: white;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%,-50%);
+}
+.per2::before{
+    content: "";
+    width: 85%;
+    height: 100%;
+    border-radius: 40px;
+    background-color: gold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.per3::after{
     content: "80%";
     font-size: 13px;
     padding: 2px;
@@ -257,7 +279,7 @@
     left: 80%;
     transform: translate(-50%,-50%);
 }
-.per2::before{
+.per3::before{
     content: "";
     width: 80%;
     height: 100%;
@@ -267,30 +289,8 @@
     left: 0;
     top: 0;
 }
-.per3::after{
-    content: "10%";
-    font-size: 13px;
-    padding: 2px;
-    border-radius: 5px;
-    color: white;
-    background: black;
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translate(-50%,-50%);
-}
-.per3::before{
-    content: "";
-    width: 10%;
-    height: 100%;
-    border-radius: 40px;
-    background-color: gold;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
 .per4::after{
-    content: "0%";
+    content: "80%";
     font-size: 13px;
     padding: 2px;
     border-radius: 5px;
@@ -298,12 +298,12 @@
     background: black;
     position: absolute;
     top: 50%;
-    left: 2%;
+    left: 80%;
     transform: translate(-50%,-50%);
 }
 .per4::before{
     content: "";
-    width: 0%;
+    width: 80%;
     height: 100%;
     border-radius: 40px;
     background-color: gold;
@@ -312,7 +312,7 @@
     top: 0;
 }
 .per5::after{
-    content: "0%";
+    content: "85%";
     font-size: 13px;
     padding: 2px;
     border-radius: 5px;
@@ -320,12 +320,12 @@
     background: black;
     position: absolute;
     top: 50%;
-    left: 2%;
+    left: 85%;
     transform: translate(-50%,-50%);
 }
 .per5::before{
     content: "";
-    width: 0%;
+    width: 85%;
     height: 100%;
     border-radius: 40px;
     background-color: gold;
@@ -339,11 +339,24 @@
 .project-cnt{
     margin-top: 40px;
     column-gap: 40px;
+    row-gap: 20px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+.prjct1{
+    background: url(image/project1.png);
+}
+.prjct2{
+    background: url(image/project2.png);
+}
+.prjct3{
+    background: url(image/project3.png);
+}
+.prjct4{
+    background: url(image/project4.png);
 }
 .project1{
-    background: url(image/project1.png);
+    
     display: inline-block;
     width: 100%;
     border-radius: 10px;
@@ -354,7 +367,7 @@
     width: 100%;
     text-align: center;
     border-radius: 10px;
-    padding: 150px 0%;
+    padding: 70px 0%;
     background: rgba(23, 155, 215,0.5);
     display: inline-block;
     color: white;
@@ -365,32 +378,7 @@
 .project1:hover h2{
     opacity: 1;
     transform: scale(1);
-} 
-
-.project2{
-    background: url(image/project2.png);
-    display: inline-block;
-    width: 100%;
-    border-radius: 10px;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.project2 h2{
-    width: 100%;
-    text-align: center;
-    border-radius: 10px;
-    padding: 150px 0%;
-    background: rgba(23, 155, 215,0.5);
-    display: inline-block;
-    color: white;
-    opacity: 0;
-    transform: scale(0);
-    transition: 0.5s;
-}
-.project2:hover h2{
-    opacity: 1;
-    transform: scale(1);
-} 
+}  
 
 .contact{
     padding: 70px 200px;
