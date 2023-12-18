@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+                *{
+                        box-sizing: border-box;
+                }
+                .crd{
+                        position: relative;
+                }
+                .card1{
+                height: 170px;
+                width: 280px;
+                border-radius: 15px;
+                margin: 200px auto;
+                background: url(../Images/crd.jpg);
+                background-size: cover;
+                color: white;
+                box-shadow: 0 0 20px black;
+                z-index: 1;
+                position: absolute;
+                top: 0px;
+                left: 400px;
+                }
+                .card1 img{
+                height: 80px;
+                /* width: 100px; */
+                object-fit: contain;
+                position: absolute;
+                top: 20%;
+                left: 0px;
+                }
+
+                .card1 h3{
+                font-size: 16px;
+                letter-spacing: 3px;
+                position: absolute;
+                top: 50%;
+                left: 18px;
+                }
+                .card1 h3 span{
+                margin-left: 15px;
+                
+                }
+
+                .card1 .hldr1{
+                font-size: 14px;
+                position: absolute;
+                bottom: 10%;
+                left: 15px;
+                }
+
+                .card1 .dt1{
+                font-size: 14px;
+                position: absolute;
+                bottom: 10%;
+                left: 80%;
+                }
+
+                .back{
+                height: 170px;
+                width: 280px;
+                border-radius: 15px;
+                margin: 200px auto;
+                background: rgb(219, 217, 217);
+                box-shadow: 0 0 20px black;
+                position: absolute;  
+                top: 60px;
+                left: 530px;
+                }
+                .blkpt{
+                        height: 30px;
+                        width: 100%;
+                        background: black;
+                        margin-top: 30px;
+                }
+                .whtpt{
+                        height: 40px;
+                        width: 80%;
+                        margin: auto;
+                        padding: 5px;
+                        background: white;
+                        margin-top: 10px;
+                        text-align: right;
+                }
+        </style>
+</head>
+<body>
+        <div class="crd">
+        <div class="card1">
+
+                <img src="../Images/cip.png" alt="">
+                <h3>5136 <span>7541</span><span> 0873</span><span> 0029</span></h3>
+                <div class="hldr1">Sarah Gold</div>
+                <div class="dt1">09/24</div>
+
+        </div>
+        <div class="back">
+                <div class="blkpt"></div>
+                <div class="whtpt">123</div>
+        </div>
+        </div>
+</body>
+</html>
