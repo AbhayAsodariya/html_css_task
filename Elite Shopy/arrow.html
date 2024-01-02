@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+        <style>
+                .get-btn{
+                        background: #CC0000;
+                        color: white;
+                        font-size: 20px;
+                        letter-spacing: 2px;
+                        font-weight: bold;
+                        padding: 15px 10px;
+                        border: none;
+                        border-radius: 10px;
+                }
+                .btn-arrow{
+                        background: rgba(255, 255, 255, 0.5);
+                        display: inline-block;
+                        height: 20px;
+                        width: 20px;
+                        font-size: 15px;
+                        box-sizing: border-box;
+                        padding: 0px 0px 0px 3px;
+                        text-align: center;
+                        border-radius: 2px;
+                        overflow: hidden;
+                }
+                .btn-arrow i{
+                        
+                        font-weight: bold;
+                }
+                .get-btn:hover .btn-arrow i{
+                        animation: arrowup 1.5s infinite;
+                }
+                @keyframes arrowup {
+
+                        0%{
+                                transform: translate(0%,-100%);
+                        }
+                        50%{
+                                transform: translate(0%,0%);
+                        }
+                        100%{
+                                transform: translate(0%,150%);
+                        }
+                        
+                }
+        </style>
+
+</head>
+<body>
+        <div>
+                <Button class="get-btn"><div class="btn-arrow"><i class="fa fa-long-arrow-down" aria-hidden="true"></i></div> GET APP</Button>
+        </div>
+</body>
+</html>
