@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+                
+                .circle{
+                        width: 130px;
+                        height: 130px;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                }
+                .in-circle{
+                        width: 80px;
+                        height: 80px;
+                        background-color: white;
+                        border-radius: 50%;
+                        position: absolute;
+                        z-index: 1;
+
+                }
+                .circle::after{
+                        content: "";
+                        height: 100%;
+                        width: 100%;
+                        background: conic-gradient(#06B48A 0deg, #06B48A 120deg,transparent 120deg, transparent 360deg );
+                        color: transparent;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                }
+
+                .circle:hover::after{
+                        background: conic-gradient(#76ffdf 0deg, #76ffdf 120deg,transparent 120deg, transparent 360deg );
+                }
+
+                .circle::before{
+                        content: "";
+                        height: 100%;
+                        width: 100%;
+                        background: conic-gradient(transparent 0deg, transparent 120deg,#6560F0 120deg, #6560F0 240deg,transparent 240deg, transparent 360deg );
+                        color: transparent;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                }
+
+                .circle:hover::before{
+                        background: conic-gradient(transparent 0deg, transparent 120deg,#a3a0ff 120deg, #a3a0ff  240deg,transparent 240deg, transparent 360deg );
+
+                }
+
+                .third-line{
+                        height: 100%;
+                        width: 100%;
+                        background: conic-gradient(transparent 0deg, transparent 240deg,#6FD3F7 240deg, #6FD3F7 360deg );
+                        color: transparent;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                }
+                .circle:hover .third-line{
+                        background: conic-gradient(transparent 0deg, transparent 240deg,#a5e7ff 240deg, #a5e7ff 360deg );
+                }
+        </style>
+</head>
+<body>
+        <div class="circle">
+                <div class="in-circle">
+                </div>
+                <div class="third-line">
+                </div>
+        </div>
+</body>
+</html>
